@@ -3,3 +3,116 @@
   padding: 0;
   margin: 0;
 }
+
+.mybtn {
+  padding: 8px 10px;
+  background-color: deepskyblue;
+  color: white;
+  font-weight: 600;
+  outline: deepskyblue;
+  border: deepskyblue;
+  border-radius: 5px;
+}
+
+/* Birthday remainder Proj- 1 */
+
+.birthdayContainer {
+  background-color: coral;
+  padding-bottom: 20px;
+}
+.cardCompo {
+  max-width: 500px;
+  background-color: #ffff;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.pepopleCard {
+  display: flex;
+}
+
+.bdayCardDetail {
+  margin-left: 20px;
+}
+
+.bdayPplImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.pepopleCard {
+  margin-bottom: 10px;
+}
+
+.bdayCardDetail p {
+  font-weight: 500;
+}
+.bdayCardDetail h6 {
+  font-weight: 600;
+}
+
+/* Tours Proj PRoj --2 */
+
+.tourCard {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.tourCard .card-img-top {
+  max-height: 365px;
+}
+
+.tourCard button {
+  margin: 0 30px;
+  margin-bottom: 30px;
+}
+
+.readMore {
+  color: rgb(77, 180, 248);
+  font-weight: 600;
+}
+
+/* Review Proj- 3 */
+
+.review {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 20px 30px 0 #ddd;
+  text-align: center;
+  padding: 5px;
+}
+
+.review img {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.imageArticle {
+  position: relative;
+}
+
+.quoteIcon {
+  position: absolute;
+  background-color: cadetblue;
+  font-size: 30px;
+  border-radius: 50%;
+  left: 150px;
+}
+
+.review h5 {
+  font-weight: 600;
+}
+
+.review h6 {
+  font-weight: 600;
+  color: tomato;
+  text-transform: uppercase;
+}
+.review p {
+  font-weight: 500;
+}
