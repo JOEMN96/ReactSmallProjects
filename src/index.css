@@ -12,6 +12,7 @@
   outline: deepskyblue;
   border: deepskyblue;
   border-radius: 5px;
+  outline: none;
 }
 
 /* Birthday remainder Proj- 1 */
@@ -115,4 +116,101 @@
 }
 .review p {
   font-weight: 500;
+}
+
+/* Accordian PRoj 4 */
+
+.accordianConatainer {
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.accordianParent {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.accFlex {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+}
+
+.plusIcon {
+  font-size: 25px;
+  color: tomato;
+}
+
+.plusIcon:hover {
+  cursor: pointer;
+}
+
+.accInfo {
+  margin-bottom: 10px;
+  transition: all 1s ease;
+}
+
+/* PROJ5 Filter menu Proj */
+
+.singleItemFil {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 20px;
+}
+
+.filterMenuMain h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.singleItemFil .filFlexContainer {
+  display: flex;
+  padding: 20px;
+}
+
+.filFlexContainer img {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.itemdetail {
+  margin-left: 15px;
+}
+.itemdetail h5 {
+  margin-top: 10px;
+  color: rgb(209, 209, 209);
+}
+
+.itemdetail p {
+  font-weight: 500;
+  text-align: justify;
+}
+
+.itemdetail .innerHead {
+  display: flex;
+  justify-content: space-between;
+}
+.innerHead {
+  font-weight: 600;
+}
+
+.filterBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.filterBtnContainer button {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+  .singleItemFil .filFlexContainer {
+    flex-wrap: wrap;
+  }
 }

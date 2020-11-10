@@ -2,6 +2,7 @@ import React from "react";
 import ProjImg1 from "../assets/proj1.PNG";
 import ProjImg2 from "../assets/proj2.PNG";
 import ProjImg3 from "../assets/proj3.PNG";
+import ProjImg4 from "../assets/Proj4.PNG";
 import DashboardCard from "./DashboardCard";
 
 function Dashboard() {
@@ -30,6 +31,14 @@ function Dashboard() {
             heading="Reviews Project"
             des="Review Project worked on array manupulation ! "
             to="/proj3"
+          />
+        </div>
+        <div className="col-md-4 mt-5">
+          <DashboardCard
+            img={ProjImg4}
+            heading="Accordion"
+            des="Accordian Worked on simple Logics like conditional operator etc !"
+            to="/proj4"
           />
         </div>
       </div>
