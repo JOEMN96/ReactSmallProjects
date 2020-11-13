@@ -3,6 +3,7 @@ import ProjImg1 from "../assets/proj1.PNG";
 import ProjImg2 from "../assets/proj2.PNG";
 import ProjImg3 from "../assets/proj3.PNG";
 import ProjImg4 from "../assets/Proj4.PNG";
+import ProjImg5 from "../assets/Proj5.PNG";
 import DashboardCard from "./DashboardCard";
 
 function Dashboard() {
@@ -39,6 +40,14 @@ function Dashboard() {
             heading="Accordion"
             des="Accordian Worked on simple Logics like conditional operator etc !"
             to="/proj4"
+          />
+        </div>
+        <div className="col-md-4 mt-5">
+          <DashboardCard
+            img={ProjImg5}
+            heading="Filter Menu"
+            des="Used Filter() to filter different items and with dynamic menus"
+            to="/proj5"
           />
         </div>
       </div>

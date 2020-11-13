@@ -7,10 +7,13 @@ import Tours from "./Components/Projects/PROJ2_TourSearch/Tours";
 import Error from "./Components/Error";
 import Accordian from "./Components/Projects/PROJ4_accordian/Accordian";
 import FilterMenuMAin from "./Components/Projects/PROJ5_filterMenu/FilterMenuMAin";
+import ScrollToTop from "./Components/FIxScroll";
+import TabsProj from "./Components/Projects/PROJ6_Tabs/TabsProj";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Switch>
         <Route exact path="/">
@@ -35,6 +38,10 @@ function App() {
 
         <Route exact path="/proj5">
           <FilterMenuMAin />
+        </Route>
+
+        <Route exact path="/proj6">
+          <TabsProj />
         </Route>
 
         <Route exact path="*">
