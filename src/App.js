@@ -9,6 +9,8 @@ import Accordian from "./Components/Projects/PROJ4_accordian/Accordian";
 import FilterMenuMAin from "./Components/Projects/PROJ5_filterMenu/FilterMenuMAin";
 import ScrollToTop from "./Components/FIxScroll";
 import TabsProj from "./Components/Projects/PROJ6_Tabs/TabsProj";
+import LoremMain from "./Components/Projects/PROJ8_loremipsum/LoremMain";
+import ColorGEn from "./Components/Projects/PROJ9_ColorGEn/ColorGEn";
 
 function App() {
   return (
@@ -42,6 +44,14 @@ function App() {
 
         <Route exact path="/proj6">
           <TabsProj />
+        </Route>
+
+        <Route exact path="/proj8">
+          <LoremMain />
+        </Route>
+
+        <Route exact path="/proj9">
+          <ColorGEn />
         </Route>
 
         <Route exact path="*">

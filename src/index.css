@@ -232,6 +232,26 @@
   font-weight: 600;
 }
 
+/* Proj 8 LOrem ipsum Generator */
+
+.innerLorem input {
+  padding: 6px;
+}
+
+.innerLorem label {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.generatedParaSec {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.maxP {
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 950px) {
   .singleItemFil .filFlexContainer {
     flex-wrap: wrap;

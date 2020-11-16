@@ -4,6 +4,7 @@ import ProjImg2 from "../assets/proj2.PNG";
 import ProjImg3 from "../assets/proj3.PNG";
 import ProjImg4 from "../assets/Proj4.PNG";
 import ProjImg5 from "../assets/Proj5.PNG";
+import ProjImg8 from "../assets/Proj8.PNG";
 import DashboardCard from "./DashboardCard";
 
 function Dashboard() {
@@ -48,6 +49,14 @@ function Dashboard() {
             heading="Filter Menu"
             des="Used Filter() to filter different items and with dynamic menus"
             to="/proj5"
+          />
+        </div>
+        <div className="col-md-4 mt-5">
+          <DashboardCard
+            img={ProjImg8}
+            heading="Lorem Ipsum GEN"
+            des="Used Onchange Event and revamped some ideas"
+            to="/proj8"
           />
         </div>
       </div>
