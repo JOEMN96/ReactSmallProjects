@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-
+import Values from "values.js";
+import SingleColor from "./SingleColor";
+// new Values("#ddd").all(10)
 function ColorGEn() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
@@ -7,22 +9,29 @@ function ColorGEn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log("ye");
+    try {
+      let colors = new Values(color).all(10);
+      setError(false);
+      setColorList(colors);
+      console.log(colors);
+    } catch (error) {
+      setError(true);
+    }
   };
 
   return (
-    <div className="container">
-      <h3 className="text-center mt-5">Lorem Ipsum Generator</h3>
+    <div className="container-fluid">
+      <h3 className="text-center mt-5">Color Pallete Generator</h3>
       <div className="innerLorem text-center mt-5">
         <form onSubmit={handleSubmit}>
           <label htmlFor="color">Color: </label>
           <input
+            className={error ? "loremError" : null}
             type="text"
             name="color"
             id="amunt"
             value={color}
-            placeholder="#7579e7"
+            placeholder="Red"
             onChange={(e) => {
               setColor(e.target.value);
             }}
@@ -31,6 +40,18 @@ function ColorGEn() {
             Generate
           </button>
         </form>
+      </div>
+      <div className="row palleteList">
+        {colorList.map((color, index) => {
+          return (
+            <SingleColor
+              key={index}
+              {...color}
+              index={index}
+              hexColor={color.hex}
+            />
+          );
+        })}
       </div>
     </div>
   );
